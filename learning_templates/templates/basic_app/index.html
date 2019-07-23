@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+<!-- we should load my_extras to the page not to the base -->
+{% block body_block %}
+<div class="jumbotron">
+  <h1>WELcome to index</h1>
+  <h2>this is a example of index inheritance inherit form base</h2>
+  <h3>{{ text|upper }}</h3>
+  <!-- you need to load the cut in the base -->
+  <h3>{{ text|cutme:'h' }}</h3>
+  <h3>{{ number|add:"99" }}</h3>
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>welcome to index</h1>
+
+  </body>
+</html> -->

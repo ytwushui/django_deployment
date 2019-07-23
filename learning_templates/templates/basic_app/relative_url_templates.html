@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>welcome to relative url tmemplet</h1>
+    <!-- <a href="basic_app/other.html"></a> -->
+    <a href="{% url 'basic_app:other' %}">other link</a>
+    <a href="{% url 'admin:index' %}">back to admin(migrate first)</a>
+    <a href="{% url 'index' %}">other index</a>
+
+  </body>
+</html>
